@@ -79,7 +79,7 @@ sniffio==1.2.0
 sortedcontainers==2.4.0
 starlette==0.14.2
 toml==0.10.2
-tortoise-orm==0.17.6
+
 typing-extensions==3.10.0.0
 ujson==4.1.0
 urllib3==1.26.6
@@ -87,3 +87,5 @@ uvicorn==0.13.4
 uvloop==0.16.0
 watchgod==0.7
 websockets==8.1
+tortoise-orm
+aerich

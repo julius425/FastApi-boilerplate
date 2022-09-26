@@ -70,4 +70,19 @@ def create_app():
     return app
 
 
+TORTOISE_ORM = {
+        "connections": {"default": settings.DATABASE_URL},
+        "apps": {
+            "models": {
+                "models": [
+                    "app.models.codes", "app.models.users",
+                    "aerich.models"
+                ],
+                "default_connection": "default",
+            },
+        },
+    }
+
+
+
 app = create_app()

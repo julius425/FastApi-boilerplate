@@ -12,9 +12,10 @@ class User(CoreModel):
     email = fields.CharField(100, unique=True, index=True)
     password = fields.CharField(128)
     name = fields.CharField(50)
-    surname = fields.CharField(50)
+    surname = fields.CharField(10)
     city = fields.CharField(30, null=True)
     company_name = fields.CharField(40, null=True)
+
 
     @staticmethod
     def get_contact_fields():
